@@ -1,0 +1,7 @@
+checkpoint/*
+data/*
+.idea
+ig_folder
+*.log
+__pycache__/*
+*.pyc

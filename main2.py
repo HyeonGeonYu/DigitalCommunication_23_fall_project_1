@@ -57,6 +57,7 @@ if __name__ == '__main__':
     plt.ylim([0, 1])
     plt.grid(True, linestyle=':', which='both')
     plt.show()
+    plt.savefig('simulation_result.png')
     print("".join(list(map(str, source_A.tolist()))))
     print("".join(list(map(str, encoded_A.tolist()))))
 

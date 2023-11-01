@@ -8,4 +8,9 @@ conda install matplotlib
 conda install seaborn
 ```
 
+# huffman tree result
+![result_huffman.png](result_huffman.png)
 
+
+# simulation result(100번의 simulation의 평균)
+![simulation_result.png](simulation_result.png)

@@ -50,11 +50,11 @@ if __name__ == '__main__':
     compressed_A = h_A.compress()
     decompressed_A = Huffman_decoder(compressed_A,h_A).reshape(-1,)
 
-    tmp = 0
+    tmp_ratio = 0
     for __,i in enumerate(result_combinations):
         print("조합 :", tuple(i.tolist()),"코드 :","{0:7}".format(h_A.codes[tuple(i.tolist())]), "길이: ", len(h_A.codes[tuple(i.tolist())]), "확률:", "{0:.2}".format(result_combinations_prob[__]))
-        tmp += len(h_A.codes[tuple(i.tolist())]) * result_combinations_prob[__]
-    compression_ratio = tmp/4
+        tmp_ratio += len(h_A.codes[tuple(i.tolist())]) * result_combinations_prob[__]
+    compression_ratio = tmp_ratio/4
     print("Compression_Ratio :","{0:.3}".format(compression_ratio))
     print(compressed_A.shape)
     print("".join(list(map(str,source_A.tolist()))))
@@ -78,16 +78,15 @@ if __name__ == '__main__':
     compressed_B = h_B.compress()
     decompressed_B = Huffman_decoder(compressed_B,h_B).reshape(-1, )
 
-    tmp = 0
+    tmp_ratio = 0
     for __, i in enumerate(result_combinations):
         print("조합 :", tuple(i.tolist()), "코드 :", "{0:7}".format(h_B.codes[tuple(i.tolist())]), "길이: ",
-              len(h_B.codes[tuple(i.tolist())]), "확률:", "{0:.2}".format(result_combinations_prob[__]))
-        tmp += len(h_B.codes[tuple(i.tolist())]) * result_combinations_prob[__]
-    compression_ratio = tmp / 4
+              len(h_B.codes[tuple(i.tolist())]), "확률:", "{0:.2}".format(st_st_prob[__]))
+        tmp_ratio += len(h_B.codes[tuple(i.tolist())]) * st_st_prob[__]
+
+    compression_ratio = tmp_ratio/ 4
     print("Compression_Ratio :", "{0:.3}".format(compression_ratio))
     print(compressed_A.shape)
     print("".join(list(map(str, source_A.tolist()))))
     print("".join(list(map(str, compressed_A.reshape(-1, ).tolist()))))
 
-
-    transition_matrix = transition_num

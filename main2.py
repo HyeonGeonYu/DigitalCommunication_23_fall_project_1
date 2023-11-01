@@ -56,7 +56,7 @@ if __name__ == '__main__':
     plt.plot(p_list,avg_FER_tensor.tolist(), 'o-',color='red')
     plt.ylim([0, 1])
     plt.grid(True, linestyle=':', which='both')
-    plt.savefig('simulation_result.png')
+    plt.savefig('simulation_result1.png')
     plt.show()
     print("".join(list(map(str, source_A.tolist()))))
     print("".join(list(map(str, encoded_A.tolist()))))

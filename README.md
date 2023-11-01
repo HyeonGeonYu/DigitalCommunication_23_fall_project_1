@@ -13,4 +13,4 @@ conda install seaborn
 
 
 # simulation result (100회의 평균)
-![simulation_result.png](simulation_result.png)
+![simulation_result.png](simulation_result1.png)

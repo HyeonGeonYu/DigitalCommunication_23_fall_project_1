@@ -12,5 +12,5 @@ conda install seaborn
 ![result_huffman.png](result_huffman.png)
 
 
-# simulation result(100번의 simulation의 평균)
+# simulation result (100회의 평균)
 ![simulation_result.png](simulation_result.png)

@@ -9,8 +9,11 @@ conda install seaborn
 ```
 
 # huffman tree result
-![result_huffman.png](result_huffman.png)
+## Source A
+![result_huffman_A.png](result_huffman_A.png)
 
+## Source B
+![result_huffman_B.png](result_huffman_B.png)
 
 # simulation result (100회의 평균)
 ![simulation_result.png](simulation_result1.png)
